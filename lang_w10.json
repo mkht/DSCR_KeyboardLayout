@@ -1,0 +1,874 @@
+﻿[
+    {
+        "tag":  "af-ZA",
+        "id":  "0436"
+    },
+    {
+        "tag":  "am-ET",
+        "id":  "045e"
+    },
+    {
+        "tag":  "ar-AE",
+        "id":  "3801"
+    },
+    {
+        "tag":  "ar-BH",
+        "id":  "3c01"
+    },
+    {
+        "tag":  "ar-DZ",
+        "id":  "1401"
+    },
+    {
+        "tag":  "ar-EG",
+        "id":  "0c01"
+    },
+    {
+        "tag":  "ar-IQ",
+        "id":  "0801"
+    },
+    {
+        "tag":  "ar-JO",
+        "id":  "2c01"
+    },
+    {
+        "tag":  "ar-KW",
+        "id":  "3401"
+    },
+    {
+        "tag":  "ar-LB",
+        "id":  "3001"
+    },
+    {
+        "tag":  "ar-LY",
+        "id":  "1001"
+    },
+    {
+        "tag":  "ar-MA",
+        "id":  "1801"
+    },
+    {
+        "tag":  "arn-CL",
+        "id":  "047a"
+    },
+    {
+        "tag":  "ar-OM",
+        "id":  "2001"
+    },
+    {
+        "tag":  "ar-QA",
+        "id":  "4001"
+    },
+    {
+        "tag":  "ar-SA",
+        "id":  "0401"
+    },
+    {
+        "tag":  "ar-SY",
+        "id":  "2801"
+    },
+    {
+        "tag":  "ar-TN",
+        "id":  "1c01"
+    },
+    {
+        "tag":  "ar-YE",
+        "id":  "2401"
+    },
+    {
+        "tag":  "as-IN",
+        "id":  "044d"
+    },
+    {
+        "tag":  "az-Cyrl-AZ",
+        "id":  "082c"
+    },
+    {
+        "tag":  "az-Latn-AZ",
+        "id":  "042c"
+    },
+    {
+        "tag":  "ba-RU",
+        "id":  "046d"
+    },
+    {
+        "tag":  "be-BY",
+        "id":  "0423"
+    },
+    {
+        "tag":  "bg-BG",
+        "id":  "0402"
+    },
+    {
+        "tag":  "bn-BD",
+        "id":  "0845"
+    },
+    {
+        "tag":  "bn-IN",
+        "id":  "0445"
+    },
+    {
+        "tag":  "bo-CN",
+        "id":  "0451"
+    },
+    {
+        "tag":  "br-FR",
+        "id":  "047e"
+    },
+    {
+        "tag":  "bs-Cyrl-BA",
+        "id":  "201a"
+    },
+    {
+        "tag":  "bs-Latn-BA",
+        "id":  "141a"
+    },
+    {
+        "tag":  "ca-ES",
+        "id":  "0403"
+    },
+    {
+        "tag":  "co-FR",
+        "id":  "0483"
+    },
+    {
+        "tag":  "cs-CZ",
+        "id":  "0405"
+    },
+    {
+        "tag":  "cy-GB",
+        "id":  "0452"
+    },
+    {
+        "tag":  "da-DK",
+        "id":  "0406"
+    },
+    {
+        "tag":  "de-AT",
+        "id":  "0c07"
+    },
+    {
+        "tag":  "de-CH",
+        "id":  "0807"
+    },
+    {
+        "tag":  "de-DE",
+        "id":  "0407"
+    },
+    {
+        "tag":  "de-LI",
+        "id":  "1407"
+    },
+    {
+        "tag":  "de-LU",
+        "id":  "1007"
+    },
+    {
+        "tag":  "dsb-DE",
+        "id":  "082e"
+    },
+    {
+        "tag":  "dv-MV",
+        "id":  "0465"
+    },
+    {
+        "tag":  "el-GR",
+        "id":  "0408"
+    },
+    {
+        "tag":  "en-029",
+        "id":  "2409"
+    },
+    {
+        "tag":  "en-AU",
+        "id":  "0c09"
+    },
+    {
+        "tag":  "en-BZ",
+        "id":  "2809"
+    },
+    {
+        "tag":  "en-CA",
+        "id":  "1009"
+    },
+    {
+        "tag":  "en-GB",
+        "id":  "0809"
+    },
+    {
+        "tag":  "en-IE",
+        "id":  "1809"
+    },
+    {
+        "tag":  "en-IN",
+        "id":  "4009"
+    },
+    {
+        "tag":  "en-JM",
+        "id":  "2009"
+    },
+    {
+        "tag":  "en-MY",
+        "id":  "4409"
+    },
+    {
+        "tag":  "en-NZ",
+        "id":  "1409"
+    },
+    {
+        "tag":  "en-PH",
+        "id":  "3409"
+    },
+    {
+        "tag":  "en-SG",
+        "id":  "4809"
+    },
+    {
+        "tag":  "en-TT",
+        "id":  "2c09"
+    },
+    {
+        "tag":  "en-US",
+        "id":  "0409"
+    },
+    {
+        "tag":  "en-ZA",
+        "id":  "1c09"
+    },
+    {
+        "tag":  "en-ZW",
+        "id":  "3009"
+    },
+    {
+        "tag":  "es-AR",
+        "id":  "2c0a"
+    },
+    {
+        "tag":  "es-BO",
+        "id":  "400a"
+    },
+    {
+        "tag":  "es-CL",
+        "id":  "340a"
+    },
+    {
+        "tag":  "es-CO",
+        "id":  "240a"
+    },
+    {
+        "tag":  "es-CR",
+        "id":  "140a"
+    },
+    {
+        "tag":  "es-DO",
+        "id":  "1c0a"
+    },
+    {
+        "tag":  "es-EC",
+        "id":  "300a"
+    },
+    {
+        "tag":  "es-ES",
+        "id":  "0c0a"
+    },
+    {
+        "tag":  "es-ES_tradnl",
+        "id":  "040a"
+    },
+    {
+        "tag":  "es-GT",
+        "id":  "100a"
+    },
+    {
+        "tag":  "es-HN",
+        "id":  "480a"
+    },
+    {
+        "tag":  "es-MX",
+        "id":  "080a"
+    },
+    {
+        "tag":  "es-NI",
+        "id":  "4c0a"
+    },
+    {
+        "tag":  "es-PA",
+        "id":  "180a"
+    },
+    {
+        "tag":  "es-PE",
+        "id":  "280a"
+    },
+    {
+        "tag":  "es-PR",
+        "id":  "500a"
+    },
+    {
+        "tag":  "es-PY",
+        "id":  "3c0a"
+    },
+    {
+        "tag":  "es-SV",
+        "id":  "440a"
+    },
+    {
+        "tag":  "es-US",
+        "id":  "540a"
+    },
+    {
+        "tag":  "es-UY",
+        "id":  "380a"
+    },
+    {
+        "tag":  "es-VE",
+        "id":  "200a"
+    },
+    {
+        "tag":  "et-EE",
+        "id":  "0425"
+    },
+    {
+        "tag":  "eu-ES",
+        "id":  "042d"
+    },
+    {
+        "tag":  "fa-IR",
+        "id":  "0429"
+    },
+    {
+        "tag":  "fi-FI",
+        "id":  "040b"
+    },
+    {
+        "tag":  "fil-PH",
+        "id":  "0464"
+    },
+    {
+        "tag":  "fo-FO",
+        "id":  "0438"
+    },
+    {
+        "tag":  "fr-BE",
+        "id":  "080c"
+    },
+    {
+        "tag":  "fr-CA",
+        "id":  "0c0c"
+    },
+    {
+        "tag":  "fr-CH",
+        "id":  "100c"
+    },
+    {
+        "tag":  "fr-FR",
+        "id":  "040c"
+    },
+    {
+        "tag":  "fr-LU",
+        "id":  "140c"
+    },
+    {
+        "tag":  "fr-MC",
+        "id":  "180c"
+    },
+    {
+        "tag":  "fy-NL",
+        "id":  "0462"
+    },
+    {
+        "tag":  "ga-IE",
+        "id":  "083c"
+    },
+    {
+        "tag":  "gd-GB",
+        "id":  "0491"
+    },
+    {
+        "tag":  "gl-ES",
+        "id":  "0456"
+    },
+    {
+        "tag":  "gsw-FR",
+        "id":  "0484"
+    },
+    {
+        "tag":  "gu-IN",
+        "id":  "0447"
+    },
+    {
+        "tag":  "ha-Latn-NG",
+        "id":  "0468"
+    },
+    {
+        "tag":  "he-IL",
+        "id":  "040d"
+    },
+    {
+        "tag":  "hi-IN",
+        "id":  "0439"
+    },
+    {
+        "tag":  "hr-BA",
+        "id":  "101a"
+    },
+    {
+        "tag":  "hr-HR",
+        "id":  "041a"
+    },
+    {
+        "tag":  "hsb-DE",
+        "id":  "042e"
+    },
+    {
+        "tag":  "hu-HU",
+        "id":  "040e"
+    },
+    {
+        "tag":  "hy-AM",
+        "id":  "042b"
+    },
+    {
+        "tag":  "id-ID",
+        "id":  "0421"
+    },
+    {
+        "tag":  "ig-NG",
+        "id":  "0470"
+    },
+    {
+        "tag":  "ii-CN",
+        "id":  "0478"
+    },
+    {
+        "tag":  "is-IS",
+        "id":  "040f"
+    },
+    {
+        "tag":  "it-CH",
+        "id":  "0810"
+    },
+    {
+        "tag":  "it-IT",
+        "id":  "0410"
+    },
+    {
+        "tag":  "iu-Cans-CA",
+        "id":  "045d"
+    },
+    {
+        "tag":  "iu-Latn-CA",
+        "id":  "085d"
+    },
+    {
+        "tag":  "ja-JP",
+        "id":  "0411"
+    },
+    {
+        "tag":  "ka-GE",
+        "id":  "0437"
+    },
+    {
+        "tag":  "kk-KZ",
+        "id":  "043f"
+    },
+    {
+        "tag":  "kl-GL",
+        "id":  "046f"
+    },
+    {
+        "tag":  "km-KH",
+        "id":  "0453"
+    },
+    {
+        "tag":  "kn-IN",
+        "id":  "044b"
+    },
+    {
+        "tag":  "kok-IN",
+        "id":  "0457"
+    },
+    {
+        "tag":  "ko-KR",
+        "id":  "0412"
+    },
+    {
+        "tag":  "ky-KG",
+        "id":  "0440"
+    },
+    {
+        "tag":  "lb-LU",
+        "id":  "046e"
+    },
+    {
+        "tag":  "lo-LA",
+        "id":  "0454"
+    },
+    {
+        "tag":  "lt-LT",
+        "id":  "0427"
+    },
+    {
+        "tag":  "lv-LV",
+        "id":  "0426"
+    },
+    {
+        "tag":  "mi-NZ",
+        "id":  "0481"
+    },
+    {
+        "tag":  "mk-MK",
+        "id":  "042f"
+    },
+    {
+        "tag":  "ml-IN",
+        "id":  "044c"
+    },
+    {
+        "tag":  "mn-MN",
+        "id":  "0450"
+    },
+    {
+        "tag":  "mn-Mong-CN",
+        "id":  "0850"
+    },
+    {
+        "tag":  "mn-Mong-MN",
+        "id":  "0c50"
+    },
+    {
+        "tag":  "moh-CA",
+        "id":  "047c"
+    },
+    {
+        "tag":  "mr-IN",
+        "id":  "044e"
+    },
+    {
+        "tag":  "ms-BN",
+        "id":  "083e"
+    },
+    {
+        "tag":  "ms-MY",
+        "id":  "043e"
+    },
+    {
+        "tag":  "mt-MT",
+        "id":  "043a"
+    },
+    {
+        "tag":  "nb-NO",
+        "id":  "0414"
+    },
+    {
+        "tag":  "ne-NP",
+        "id":  "0461"
+    },
+    {
+        "tag":  "nl-BE",
+        "id":  "0813"
+    },
+    {
+        "tag":  "nl-NL",
+        "id":  "0413"
+    },
+    {
+        "tag":  "nn-NO",
+        "id":  "0814"
+    },
+    {
+        "tag":  "nso-ZA",
+        "id":  "046c"
+    },
+    {
+        "tag":  "oc-FR",
+        "id":  "0482"
+    },
+    {
+        "tag":  "or-IN",
+        "id":  "0448"
+    },
+    {
+        "tag":  "pa-IN",
+        "id":  "0446"
+    },
+    {
+        "tag":  "pl-PL",
+        "id":  "0415"
+    },
+    {
+        "tag":  "prs-AF",
+        "id":  "048c"
+    },
+    {
+        "tag":  "ps-AF",
+        "id":  "0463"
+    },
+    {
+        "tag":  "pt-BR",
+        "id":  "0416"
+    },
+    {
+        "tag":  "pt-PT",
+        "id":  "0816"
+    },
+    {
+        "tag":  "quz-BO",
+        "id":  "046b"
+    },
+    {
+        "tag":  "quz-EC",
+        "id":  "086b"
+    },
+    {
+        "tag":  "quz-PE",
+        "id":  "0c6b"
+    },
+    {
+        "tag":  "rm-CH",
+        "id":  "0417"
+    },
+    {
+        "tag":  "ro-RO",
+        "id":  "0418"
+    },
+    {
+        "tag":  "ru-RU",
+        "id":  "0419"
+    },
+    {
+        "tag":  "rw-RW",
+        "id":  "0487"
+    },
+    {
+        "tag":  "sah-RU",
+        "id":  "0485"
+    },
+    {
+        "tag":  "sa-IN",
+        "id":  "044f"
+    },
+    {
+        "tag":  "se-FI",
+        "id":  "0c3b"
+    },
+    {
+        "tag":  "se-NO",
+        "id":  "043b"
+    },
+    {
+        "tag":  "se-SE",
+        "id":  "083b"
+    },
+    {
+        "tag":  "si-LK",
+        "id":  "045b"
+    },
+    {
+        "tag":  "sk-SK",
+        "id":  "041b"
+    },
+    {
+        "tag":  "sl-SI",
+        "id":  "0424"
+    },
+    {
+        "tag":  "sma-NO",
+        "id":  "183b"
+    },
+    {
+        "tag":  "sma-SE",
+        "id":  "1c3b"
+    },
+    {
+        "tag":  "smj-NO",
+        "id":  "103b"
+    },
+    {
+        "tag":  "smj-SE",
+        "id":  "143b"
+    },
+    {
+        "tag":  "smn-FI",
+        "id":  "243b"
+    },
+    {
+        "tag":  "sms-FI",
+        "id":  "203b"
+    },
+    {
+        "tag":  "sq-AL",
+        "id":  "041c"
+    },
+    {
+        "tag":  "sr-Cyrl-BA",
+        "id":  "1c1a"
+    },
+    {
+        "tag":  "sr-Cyrl-CS",
+        "id":  "0c1a"
+    },
+    {
+        "tag":  "sr-Cyrl-ME",
+        "id":  "301a"
+    },
+    {
+        "tag":  "sr-Cyrl-RS",
+        "id":  "281a"
+    },
+    {
+        "tag":  "sr-Latn-BA",
+        "id":  "181a"
+    },
+    {
+        "tag":  "sr-Latn-CS",
+        "id":  "081a"
+    },
+    {
+        "tag":  "sr-Latn-ME",
+        "id":  "2c1a"
+    },
+    {
+        "tag":  "sr-Latn-RS",
+        "id":  "241a"
+    },
+    {
+        "tag":  "sv-FI",
+        "id":  "081d"
+    },
+    {
+        "tag":  "sv-SE",
+        "id":  "041d"
+    },
+    {
+        "tag":  "sw-KE",
+        "id":  "0441"
+    },
+    {
+        "tag":  "syr-SY",
+        "id":  "045a"
+    },
+    {
+        "tag":  "ta-IN",
+        "id":  "0449"
+    },
+    {
+        "tag":  "te-IN",
+        "id":  "044a"
+    },
+    {
+        "tag":  "tg-Cyrl-TJ",
+        "id":  "0428"
+    },
+    {
+        "tag":  "th-TH",
+        "id":  "041e"
+    },
+    {
+        "tag":  "tk-TM",
+        "id":  "0442"
+    },
+    {
+        "tag":  "tn-ZA",
+        "id":  "0432"
+    },
+    {
+        "tag":  "tr-TR",
+        "id":  "041f"
+    },
+    {
+        "tag":  "tt-RU",
+        "id":  "0444"
+    },
+    {
+        "tag":  "tzm-Latn-DZ",
+        "id":  "085f"
+    },
+    {
+        "tag":  "ug-CN",
+        "id":  "0480"
+    },
+    {
+        "tag":  "uk-UA",
+        "id":  "0422"
+    },
+    {
+        "tag":  "ur-PK",
+        "id":  "0420"
+    },
+    {
+        "tag":  "uz-Cyrl-UZ",
+        "id":  "0843"
+    },
+    {
+        "tag":  "uz-Latn-UZ",
+        "id":  "0443"
+    },
+    {
+        "tag":  "vi-VN",
+        "id":  "042a"
+    },
+    {
+        "tag":  "wo-SN",
+        "id":  "0488"
+    },
+    {
+        "tag":  "xh-ZA",
+        "id":  "0434"
+    },
+    {
+        "tag":  "yo-NG",
+        "id":  "046a"
+    },
+    {
+        "tag":  "zh-CN",
+        "id":  "0804"
+    },
+    {
+        "tag":  "zh-HK",
+        "id":  "0c04"
+    },
+    {
+        "tag":  "zh-MO",
+        "id":  "1404"
+    },
+    {
+        "tag":  "zh-SG",
+        "id":  "1004"
+    },
+    {
+        "tag":  "zh-TW",
+        "id":  "0404"
+    },
+    {
+        "tag":  "zu-ZA",
+        "id":  "0435"
+    },
+    {
+        "tag":  "chr-Cher-US",
+        "id":  "045c"
+    },
+    {
+        "tag":  "gn-PY",
+        "id":  "0474"
+    },
+    {
+        "tag":  "haw-US",
+        "id":  "0475"
+    },
+    {
+        "tag":  "ku-Arab-IQ",
+        "id":  "0492"
+    },
+    {
+        "tag":  "dz-BT",
+        "id":  "0c51"
+    },
+    {
+        "tag":  "my-MM",
+        "id":  "0455"
+    },
+    {
+        "tag":  "tzm-Tfng-MA",
+        "id":  "105f"
+    }
+]
