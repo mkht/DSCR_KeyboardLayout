@@ -1,0 +1,10 @@
+[ClassVersion("1.0.0"),FriendlyName("cKeyboardLayout")] 
+class cKeyboardLayout : OMI_BaseResource
+{
+  [write,ValueMap{"Present", "Absent"},Values{"Present", "Absent"}] string Ensure;
+  [Key] string KeyboardLayout;
+  [write] string Default;
+  [write] boolean CopySettingsToSystemAcct;
+  [write] boolean CopySettingsToDefaultUserAcct;
+  [write] boolean ClearExist;
+};
