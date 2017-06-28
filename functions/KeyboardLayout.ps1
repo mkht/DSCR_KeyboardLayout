@@ -1,6 +1,15 @@
 ﻿$modulePath = (get-item (Split-Path -parent $MyInvocation.MyCommand.Path)).Parent.FullName
-$private:lang = Join-Path $modulePath 'lang.json'
-$private:kbl = Join-Path $modulePath 'kbl.json'
+$private:suffix = '_w10'
+
+# check os version
+$private:OSVersion = ([System.Environment]::OSVersion).Version
+switch (('{0}.{1}' -f $OSVersion.Major, $OSVersion.Minor)) {
+    '6.1' { $suffix = '_w7' }    #Win7
+    '10.0' { $suffix = '_w10' }  #Win10
+}
+
+$private:lang = Join-Path $modulePath ('lang{0}.json' -f $suffix)
+$private:kbl = Join-Path $modulePath ('kbl{0}.json' -f $suffix)
 if(Test-Path $lang){
     $LanguageList = gc $lang | ConvertFrom-Json -ea SilentlyContinue
 }
