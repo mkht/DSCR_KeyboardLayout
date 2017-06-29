@@ -1,15 +1,14 @@
 ﻿$modulePath = (get-item (Split-Path -parent $MyInvocation.MyCommand.Path)).Parent.FullName
-$private:suffix = '_w10'
-
+$OS = '10'
 # check os version
-$private:OSVersion = ([System.Environment]::OSVersion).Version
-switch (('{0}.{1}' -f $OSVersion.Major, $OSVersion.Minor)) {
-    '6.1' { $suffix = '_w7' }    #Win7
-    '10.0' { $suffix = '_w10' }  #Win10
+$private:Ver = ([System.Environment]::OSVersion).Version
+switch (('{0}.{1}' -f $Ver.Major, $Ver.Minor)) {
+    '6.1' { $OS = '7' }    #Win7
+    '10.0' { $OS = '10'}  #Win10
 }
 
-$private:lang = Join-Path $modulePath ('lang{0}.json' -f $suffix)
-$private:kbl = Join-Path $modulePath ('kbl{0}.json' -f $suffix)
+$private:lang = Join-Path $modulePath ('lang_w{0}.json' -f $OS)
+$private:kbl = Join-Path $modulePath ('kbl_w{0}.json' -f $OS)
 if(Test-Path $lang){
     $LanguageList = gc $lang | ConvertFrom-Json -ea SilentlyContinue
 }
@@ -34,6 +33,34 @@ function Convert-KblNameToId
         $private:langId = $LanguageList.where({$_.tag -eq $LanguageTag}).Id
         $private:kblId = $KeyboardList.where({$_.name -eq $KeyboardLayoutName}).Id
         if($langId -and $kblId){ ("{0}:{1}" -f $langId, $kblId) }
+    }
+}
+
+function Convert-LangIdToTag
+{
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory, ValueFromPipeline, Position=0)]
+        [Alias('Id')]
+        [string]$LanguageId
+    )
+
+    Process{
+        @($LanguageList.where({$_.id -eq $LanguageId}).tag)[0]
+    }
+}
+
+function Convert-KblIdToName
+{
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory, ValueFromPipeline, Position=0)]
+        [Alias('Name')]
+        [string]$KeyboardLayoutName
+    )
+
+    Process{
+        @($LanguageList.where({$_.name -eq $KeyboardLayoutName}).id)[0]
     }
 }
 
@@ -83,6 +110,74 @@ function New-GsXml
     }
 }
 
+function Set-KeyboardLayout
+{
+    [CmdletBinding(DefaultParameterSetName='ID')]
+    Param(
+        [Parameter(Mandatory, ValueFromPipeline, ValueFromPipelineByPropertyName, ParameterSetName='ID')]
+        [ValidatePattern('^[0-9a-f]{4}:[0-9a-f\-\{\}]{8,}$')]
+        [Alias('Id')]
+        [string]$KeyboardLayoutId,
+
+        [Parameter(Mandatory, ValueFromPipelineByPropertyName, ParameterSetName='Name')]
+        [ValidateScript({$LanguageList.tag -eq $_})]
+        [Alias('Tag')]
+        [Alias('Language')]
+        [string]$LanguageTag,
+
+        [Parameter(Mandatory, ValueFromPipelineByPropertyName, ParameterSetName='Name')]
+        [ValidateScript({$KeyboardList.name -eq $_})]
+        [Alias('Name')]
+        [string]$KeyboardLayoutName,
+
+        [Parameter(ValueFromPipelineByPropertyName)]
+        [ValidateSet('add','remove')]
+        [string]$Action = 'add',
+
+        [Parameter(ValueFromPipelineByPropertyName)]
+        [bool]$Default = $false,
+
+        [switch]$CopySettingsToDefaultUserAcct, # Win7 only
+        [switch]$CopySettingsToSystemAcct, # Win7 only
+        [switch]$ClearExist # Win10 only
+    )
+
+    Begin{
+        $KblRaws = @()
+    }
+
+    Process{
+        if($PSCmdlet.ParameterSetName -eq 'ID'){
+            $LanguageTag = Convert-LangIdToTag $KeyboardLayoutId.Substring(0, 4)
+            $KeyboardLayoutName = Convert-KblIdToName $KeyboardLayoutId.Substring(5)
+        }
+
+        if($LanguageTag -and $KeyboardLayoutName){
+            $kblRaws += [PSCustomObject]@{
+                LanguageTag = $LanguageTag
+                KeyboardLayoutName = $KeyboardLayoutName
+                Action = $Action
+                Default = $Default
+            }
+        }
+    }
+
+    End {
+        switch ($OS) {
+            '7' {
+                $kblRaws | Set-KeyboardLayout-Win7 -CopySettingsToDefaultUserAcct:$CopySettingsToDefaultUserAcct -CopySettingsToSystemAcct:$CopySettingsToSystemAcct
+             }
+            '10' {
+                $KblRaws | Set-KeyboardLayout-Win10 -ClearExist:$ClearExist
+            }
+            Default {
+                Write-Error ('Non supported Operating System')
+                $KblRaws | Set-KeyboardLayout-Win10 -ClearExist:$ClearExist
+            }
+        }
+    }
+}
+
 <#
 .Synopsis
    Add or Remove keyboard layout
@@ -121,7 +216,7 @@ function New-GsXml
    Add "Chinese (Taiwan) - Chinese Simplified QuanPin" using friendly name
    Set-KeyboardLayout -LanguageTag 'zh-TW' -KeyboardLayoutName "Chinese Simplified QuanPin"
 #>
-function Set-KeyboardLayout
+function Set-KeyboardLayout-Win7
 {
     [CmdletBinding(DefaultParameterSetName='ID')]
     Param(
@@ -201,6 +296,108 @@ function Set-KeyboardLayout
             if($tmpFile -and (Test-Path $tmpFile.Directory)){
                 Remove-Item $tmpFile.Directory -Recurse -Force -ErrorAction Continue
             }
+        }
+    }
+}
+
+function Set-KeyboardLayout-Win10 {
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory, ValueFromPipeline, ValueFromPipelineByPropertyName, ParameterSetName = 'ID')]
+        [ValidatePattern('^[0-9a-f]{4}:[0-9a-f\-\{\}]{8,}$')]
+        [Alias('Id')]
+        [string]$KeyboardLayoutId,
+
+        [Parameter(Mandatory, ValueFromPipelineByPropertyName, ParameterSetName = 'Name')]
+        [Alias('Tag')]
+        [Alias('Language')]
+        [string]$LanguageTag,
+
+        [Parameter(Mandatory, ValueFromPipelineByPropertyName, ParameterSetName = 'Name')]
+        [Alias('Name')]
+        [string]$KeyboardLayoutName,
+
+        [Parameter(ValueFromPipelineByPropertyName)]
+        [ValidateSet('add', 'remove')]
+        [string]$Action = 'add',
+
+        [Parameter(ValueFromPipelineByPropertyName)]
+        [bool]$Default = $false,
+
+        [switch]$ClearExist
+    )
+
+    Begin {
+        if ($ClearExist) {
+            $KblList = New-Object -TypeName 'System.Collections.Generic.List`1[[Microsoft.InternationalSettings.Commands.WinUserLanguage, Microsoft.InternationalSettings.Commands, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]'
+        }
+        else {
+            $KblList = Get-WinUserLanguageList
+        }
+        $DefaultKbl = ''
+    }
+
+    Process {
+        if ($PSCmdlet.ParameterSetName -eq 'Name') {
+            $KeyboardLayoutId = Convert-KblNameToId -LanguageTag $LanguageTag -KeyboardLayoutName $KeyboardLayoutName
+        }
+
+        if (-not $LanguageTag) {
+            $LanguageTag = Convert-LangIdToTag $KeyboardLayoutId.Substring(0, 4)
+        }
+
+        if ($private:LangObj = $KblList.Find( {$args.LanguageTag -eq $LanguageTag})) {
+            #既に言語は存在するのでキーボードレイアウトだけを追加or削除する
+            switch ($Action) {
+                'add' {
+                    if ($LangObj.InputMethodTips.FindIndex( {$args -eq $KeyboardLayoutId}) -lt 0) {
+                        $LangObj.InputMethodTips.Add($KeyboardLayoutId)
+                    }
+                }
+                'remove' {
+                    $index = $LangObj.InputMethodTips.FindIndex( {$args -eq $KeyboardLayoutId})
+                    if ($index -ge 0) {
+                        $LangObj.InputMethodTips.RemoveAt($index)
+                    }
+                    if ($LangObj.InputMethodTips.Count -eq 0) {
+                        #レイアウトを消した結果その言語にレイアウトが一つもなくなった場合、言語自体も消す
+                        $index = $KblList.FindIndex( {$args.LanguageTag -eq $LanguageTag})
+                        $KblList.RemoveAt($index)
+                    }
+                }
+            }
+        }
+        else {
+            #言語+キーボードレイアウトを追加する(削除は何もする必要なし)
+            switch ($Action) {
+                'add' {
+                    $private:Lang = New-WinUserLanguageList $LanguageTag -ea SilentlyContinue
+                    if ((-not $Lang) -or (-not $Lang.EnglishName)) {
+                        Write-Error ('"{0}" is not valid LanguageTag' -f $LanguageTag)
+                    }
+                    else {
+                        if ($Lang[0].InputMethodTips.FindIndex( {$args -eq $KeyboardLayoutId}) -lt 0) {
+                            $Lang[0].InputMethodTips.Clear()
+                            $Lang[0].InputMethodTips.Add($KeyboardLayoutId)
+                        }
+                        $KblList.Add($Lang[0])
+                    }
+                }
+                'remove' {
+                    # nothing to do
+                }
+            }
+        }
+
+        if ($Default -and ($Action) -eq 'add') {
+            $DefaultKbl = $KeyboardLayoutId
+        }
+    }
+
+    End {
+        Set-WinUserLanguageList $KblList -Force
+        if ($DefaultKbl) {
+            Set-WinDefaultInputMethodOverride $DefaultKbl
         }
     }
 }
