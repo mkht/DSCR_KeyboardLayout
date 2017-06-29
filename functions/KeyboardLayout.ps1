@@ -160,6 +160,13 @@ function Set-KeyboardLayout
                 Default = $Default
             }
         }
+        elseif ($KeyboardLayoutId) {
+            $kblRaws += [PSCustomObject]@{
+                KeyboardLayoutId = $KeyboardLayoutId
+                Action = $Action
+                Default = $Default
+            }
+        }
     }
 
     End {
@@ -329,7 +336,7 @@ function Set-KeyboardLayout-Win10 {
 
     Begin {
         if ($ClearExist) {
-            $KblList = New-Object -TypeName 'System.Collections.Generic.List`1[[Microsoft.InternationalSettings.Commands.WinUserLanguage, Microsoft.InternationalSettings.Commands, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]'
+            $KblList = New-Object -TypeName 'System.Collections.Generic.List`1[[Microsoft.InternationalSettings.Commands.WinUserLanguage]]'
         }
         else {
             $KblList = Get-WinUserLanguageList
