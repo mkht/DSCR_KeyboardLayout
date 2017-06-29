@@ -1,874 +1,902 @@
 ﻿[
     {
-        "tag":  "af-ZA",
-        "id":  "0436"
+        "tag": "ja",
+        "id": "0411"
     },
     {
-        "tag":  "am-ET",
-        "id":  "045e"
+        "tag": "en-US",
+        "id": "0409"
     },
     {
-        "tag":  "ar-AE",
-        "id":  "3801"
+        "tag": "zh-Hant-TW",
+        "id": "0404"
     },
     {
-        "tag":  "ar-BH",
-        "id":  "3c01"
+        "tag": "zh-Hant-MO",
+        "id": "0404"
     },
     {
-        "tag":  "ar-DZ",
-        "id":  "1401"
+        "tag": "zh-Hant-HK",
+        "id": "0404"
     },
     {
-        "tag":  "ar-EG",
-        "id":  "0c01"
+        "tag": "ku-Arab",
+        "id": "0492"
     },
     {
-        "tag":  "ar-IQ",
-        "id":  "0801"
+        "tag": "zh-Hans-SG",
+        "id": "0804"
     },
     {
-        "tag":  "ar-JO",
-        "id":  "2c01"
+        "tag": "az-Latn",
+        "id": "042C"
     },
     {
-        "tag":  "ar-KW",
-        "id":  "3401"
+        "tag": "en-ZA",
+        "id": "1C09"
     },
     {
-        "tag":  "ar-LB",
-        "id":  "3001"
+        "tag": "en-GB",
+        "id": "0809"
     },
     {
-        "tag":  "ar-LY",
-        "id":  "1001"
+        "tag": "en-MY",
+        "id": "4409"
     },
     {
-        "tag":  "ar-MA",
-        "id":  "1801"
+        "tag": "en-BZ",
+        "id": "2809"
     },
     {
-        "tag":  "arn-CL",
-        "id":  "047a"
+        "tag": "en-PH",
+        "id": "3409"
     },
     {
-        "tag":  "ar-OM",
-        "id":  "2001"
+        "tag": "en-NZ",
+        "id": "1409"
     },
     {
-        "tag":  "ar-QA",
-        "id":  "4001"
+        "tag": "en-TT",
+        "id": "2C09"
     },
     {
-        "tag":  "ar-SA",
-        "id":  "0401"
+        "tag": "en-ZW",
+        "id": "3009"
     },
     {
-        "tag":  "ar-SY",
-        "id":  "2801"
+        "tag": "en-SG",
+        "id": "4809"
     },
     {
-        "tag":  "ar-TN",
-        "id":  "1c01"
+        "tag": "en-JM",
+        "id": "2009"
     },
     {
-        "tag":  "ar-YE",
-        "id":  "2401"
+        "tag": "en-029",
+        "id": "2409"
     },
     {
-        "tag":  "as-IN",
-        "id":  "044d"
+        "tag": "en-CA",
+        "id": "1009"
     },
     {
-        "tag":  "az-Cyrl-AZ",
-        "id":  "082c"
+        "tag": "en-AU",
+        "id": "0C09"
     },
     {
-        "tag":  "az-Latn-AZ",
-        "id":  "042c"
+        "tag": "en-IN",
+        "id": "4009"
     },
     {
-        "tag":  "ba-RU",
-        "id":  "046d"
+        "tag": "en-IE",
+        "id": "1809"
     },
     {
-        "tag":  "be-BY",
-        "id":  "0423"
+        "tag": "dsb",
+        "id": "082E"
     },
     {
-        "tag":  "bg-BG",
-        "id":  "0402"
+        "tag": "ko",
+        "id": "0412"
     },
     {
-        "tag":  "bn-BD",
-        "id":  "0845"
+        "tag": "hsb",
+        "id": "042E"
     },
     {
-        "tag":  "bn-IN",
-        "id":  "0445"
+        "tag": "sma-Latn-SE",
+        "id": "1C3B"
     },
     {
-        "tag":  "bo-CN",
-        "id":  "0451"
+        "tag": "sma-Latn-NO",
+        "id": "183B"
     },
     {
-        "tag":  "br-FR",
-        "id":  "047e"
+        "tag": "zgh-Tfng",
+        "id": "2000"
     },
     {
-        "tag":  "bs-Cyrl-BA",
-        "id":  "201a"
+        "tag": "se-Latn-SE",
+        "id": "083B"
     },
     {
-        "tag":  "bs-Latn-BA",
-        "id":  "141a"
+        "tag": "se-Latn-NO",
+        "id": "043B"
     },
     {
-        "tag":  "ca-ES",
-        "id":  "0403"
+        "tag": "se-Latn-FI",
+        "id": "0C3B"
     },
     {
-        "tag":  "co-FR",
-        "id":  "0483"
+        "tag": "is",
+        "id": "040F"
     },
     {
-        "tag":  "cs-CZ",
-        "id":  "0405"
+        "tag": "ga",
+        "id": "083C"
     },
     {
-        "tag":  "cy-GB",
-        "id":  "0452"
+        "tag": "az-Cyrl",
+        "id": "082C"
     },
     {
-        "tag":  "da-DK",
-        "id":  "0406"
+        "tag": "as",
+        "id": "044D"
     },
     {
-        "tag":  "de-AT",
-        "id":  "0c07"
+        "tag": "af",
+        "id": "0436"
     },
     {
-        "tag":  "de-CH",
-        "id":  "0807"
+        "tag": "am",
+        "id": "045E"
     },
     {
-        "tag":  "de-DE",
-        "id":  "0407"
+        "tag": "ar-AE",
+        "id": "3801"
     },
     {
-        "tag":  "de-LI",
-        "id":  "1407"
+        "tag": "ar-DZ",
+        "id": "1401"
     },
     {
-        "tag":  "de-LU",
-        "id":  "1007"
+        "tag": "ar-YE",
+        "id": "2401"
     },
     {
-        "tag":  "dsb-DE",
-        "id":  "082e"
+        "tag": "ar-IQ",
+        "id": "0801"
     },
     {
-        "tag":  "dv-MV",
-        "id":  "0465"
+        "tag": "ar-EG",
+        "id": "0C01"
     },
     {
-        "tag":  "el-GR",
-        "id":  "0408"
+        "tag": "ar-OM",
+        "id": "2001"
     },
     {
-        "tag":  "en-029",
-        "id":  "2409"
+        "tag": "ar-QA",
+        "id": "4001"
     },
     {
-        "tag":  "en-AU",
-        "id":  "0c09"
+        "tag": "ar-KW",
+        "id": "3401"
     },
     {
-        "tag":  "en-BZ",
-        "id":  "2809"
+        "tag": "ar-SA",
+        "id": "0401"
     },
     {
-        "tag":  "en-CA",
-        "id":  "1009"
+        "tag": "ar-SY",
+        "id": "2801"
     },
     {
-        "tag":  "en-GB",
-        "id":  "0809"
+        "tag": "ar-TN",
+        "id": "1C01"
     },
     {
-        "tag":  "en-IE",
-        "id":  "1809"
+        "tag": "ar-BH",
+        "id": "3C01"
     },
     {
-        "tag":  "en-IN",
-        "id":  "4009"
+        "tag": "ar-MA",
+        "id": "1801"
     },
     {
-        "tag":  "en-JM",
-        "id":  "2009"
+        "tag": "ar-JO",
+        "id": "2C01"
     },
     {
-        "tag":  "en-MY",
-        "id":  "4409"
+        "tag": "ar-LY",
+        "id": "1001"
     },
     {
-        "tag":  "en-NZ",
-        "id":  "1409"
+        "tag": "ar-LB",
+        "id": "3001"
     },
     {
-        "tag":  "en-PH",
-        "id":  "3409"
+        "tag": "gsw",
+        "id": "2400"
     },
     {
-        "tag":  "en-SG",
-        "id":  "4809"
+        "tag": "sq",
+        "id": "041C"
     },
     {
-        "tag":  "en-TT",
-        "id":  "2c09"
+        "tag": "hy",
+        "id": "042B"
     },
     {
-        "tag":  "en-US",
-        "id":  "0409"
+        "tag": "it-IT",
+        "id": "0410"
     },
     {
-        "tag":  "en-ZA",
-        "id":  "1c09"
+        "tag": "it-CH",
+        "id": "0810"
     },
     {
-        "tag":  "en-ZW",
-        "id":  "3009"
+        "tag": "smn-Latn",
+        "id": "243B"
     },
     {
-        "tag":  "es-AR",
-        "id":  "2c0a"
+        "tag": "iu-Cans",
+        "id": "045D"
     },
     {
-        "tag":  "es-BO",
-        "id":  "400a"
+        "tag": "iu-Latn",
+        "id": "085D"
     },
     {
-        "tag":  "es-CL",
-        "id":  "340a"
+        "tag": "ig-Latn",
+        "id": "0470"
     },
     {
-        "tag":  "es-CO",
-        "id":  "240a"
+        "tag": "id",
+        "id": "0421"
     },
     {
-        "tag":  "es-CR",
-        "id":  "140a"
+        "tag": "ii-Yiii",
+        "id": "0478"
     },
     {
-        "tag":  "es-DO",
-        "id":  "1c0a"
+        "tag": "ug-Arab",
+        "id": "0480"
     },
     {
-        "tag":  "es-EC",
-        "id":  "300a"
+        "tag": "cy",
+        "id": "0452"
     },
     {
-        "tag":  "es-ES",
-        "id":  "0c0a"
+        "tag": "wo-Latn",
+        "id": "0488"
     },
     {
-        "tag":  "es-ES_tradnl",
-        "id":  "040a"
+        "tag": "uk",
+        "id": "0422"
     },
     {
-        "tag":  "es-GT",
-        "id":  "100a"
+        "tag": "uz-Cyrl",
+        "id": "0843"
     },
     {
-        "tag":  "es-HN",
-        "id":  "480a"
+        "tag": "uz-Latn",
+        "id": "0443"
     },
     {
-        "tag":  "es-MX",
-        "id":  "080a"
+        "tag": "ur-IN",
+        "id": "0820"
     },
     {
-        "tag":  "es-NI",
-        "id":  "4c0a"
+        "tag": "ur-PK",
+        "id": "0420"
     },
     {
-        "tag":  "es-PA",
-        "id":  "180a"
+        "tag": "et",
+        "id": "0425"
     },
     {
-        "tag":  "es-PE",
-        "id":  "280a"
+        "tag": "oc-Latn",
+        "id": "0482"
     },
     {
-        "tag":  "es-PR",
-        "id":  "500a"
+        "tag": "or",
+        "id": "0448"
     },
     {
-        "tag":  "es-PY",
-        "id":  "3c0a"
+        "tag": "nl-NL",
+        "id": "0413"
     },
     {
-        "tag":  "es-SV",
-        "id":  "440a"
+        "tag": "nl-BE",
+        "id": "0813"
     },
     {
-        "tag":  "es-US",
-        "id":  "540a"
+        "tag": "kk",
+        "id": "043F"
     },
     {
-        "tag":  "es-UY",
-        "id":  "380a"
+        "tag": "ca",
+        "id": "0403"
     },
     {
-        "tag":  "es-VE",
-        "id":  "200a"
+        "tag": "kn",
+        "id": "044B"
     },
     {
-        "tag":  "et-EE",
-        "id":  "0425"
+        "tag": "gl",
+        "id": "0456"
     },
     {
-        "tag":  "eu-ES",
-        "id":  "042d"
+        "tag": "quc-Latn",
+        "id": "0486"
     },
     {
-        "tag":  "fa-IR",
-        "id":  "0429"
+        "tag": "rw",
+        "id": "0487"
     },
     {
-        "tag":  "fi-FI",
-        "id":  "040b"
+        "tag": "el",
+        "id": "0408"
     },
     {
-        "tag":  "fil-PH",
-        "id":  "0464"
+        "tag": "ky-Cyrl",
+        "id": "0440"
     },
     {
-        "tag":  "fo-FO",
-        "id":  "0438"
+        "tag": "gu",
+        "id": "0447"
     },
     {
-        "tag":  "fr-BE",
-        "id":  "080c"
+        "tag": "km",
+        "id": "0453"
     },
     {
-        "tag":  "fr-CA",
-        "id":  "0c0c"
+        "tag": "kl",
+        "id": "046F"
     },
     {
-        "tag":  "fr-CH",
-        "id":  "100c"
+        "tag": "hr-HR",
+        "id": "041A"
     },
     {
-        "tag":  "fr-FR",
-        "id":  "040c"
+        "tag": "hr-BA",
+        "id": "101A"
     },
     {
-        "tag":  "fr-LU",
-        "id":  "140c"
+        "tag": "quz-Latn-EC",
+        "id": "086B"
     },
     {
-        "tag":  "fr-MC",
-        "id":  "180c"
+        "tag": "quz-Latn-PE",
+        "id": "0C6B"
     },
     {
-        "tag":  "fy-NL",
-        "id":  "0462"
+        "tag": "quz-Latn-BO",
+        "id": "046B"
     },
     {
-        "tag":  "ga-IE",
-        "id":  "083c"
+        "tag": "xh",
+        "id": "0434"
     },
     {
-        "tag":  "gd-GB",
-        "id":  "0491"
+        "tag": "co-Latn",
+        "id": "0483"
     },
     {
-        "tag":  "gl-ES",
-        "id":  "0456"
+        "tag": "kok",
+        "id": "0457"
     },
     {
-        "tag":  "gsw-FR",
-        "id":  "0484"
+        "tag": "sah-Cyrl",
+        "id": "0485"
     },
     {
-        "tag":  "gu-IN",
-        "id":  "0447"
+        "tag": "sa-Deva",
+        "id": "044F"
     },
     {
-        "tag":  "ha-Latn-NG",
-        "id":  "0468"
+        "tag": "ka",
+        "id": "0437"
     },
     {
-        "tag":  "he-IL",
-        "id":  "040d"
+        "tag": "syr-Syrc",
+        "id": "045A"
     },
     {
-        "tag":  "hi-IN",
-        "id":  "0439"
+        "tag": "sd-Arab",
+        "id": "0859"
     },
     {
-        "tag":  "hr-BA",
-        "id":  "101a"
+        "tag": "si",
+        "id": "045B"
     },
     {
-        "tag":  "hr-HR",
-        "id":  "041a"
+        "tag": "sv-SE",
+        "id": "041D"
     },
     {
-        "tag":  "hsb-DE",
-        "id":  "042e"
+        "tag": "sv-FI",
+        "id": "081D"
     },
     {
-        "tag":  "hu-HU",
-        "id":  "040e"
+        "tag": "zu",
+        "id": "0435"
     },
     {
-        "tag":  "hy-AM",
-        "id":  "042b"
+        "tag": "gd-Latn",
+        "id": "0491"
     },
     {
-        "tag":  "id-ID",
-        "id":  "0421"
+        "tag": "sms-Latn",
+        "id": "203B"
     },
     {
-        "tag":  "ig-NG",
-        "id":  "0470"
+        "tag": "es-AR",
+        "id": "2C0A"
     },
     {
-        "tag":  "ii-CN",
-        "id":  "0478"
+        "tag": "es-UY",
+        "id": "380A"
     },
     {
-        "tag":  "is-IS",
-        "id":  "040f"
+        "tag": "es-EC",
+        "id": "300A"
     },
     {
-        "tag":  "it-CH",
-        "id":  "0810"
+        "tag": "es-SV",
+        "id": "440A"
     },
     {
-        "tag":  "it-IT",
-        "id":  "0410"
+        "tag": "es-GT",
+        "id": "100A"
     },
     {
-        "tag":  "iu-Cans-CA",
-        "id":  "045d"
+        "tag": "es-CR",
+        "id": "140A"
     },
     {
-        "tag":  "iu-Latn-CA",
-        "id":  "085d"
+        "tag": "es-CO",
+        "id": "240A"
     },
     {
-        "tag":  "ja-JP",
-        "id":  "0411"
+        "tag": "es-ES",
+        "id": "0C0A"
     },
     {
-        "tag":  "ka-GE",
-        "id":  "0437"
+        "tag": "es-CL",
+        "id": "340A"
     },
     {
-        "tag":  "kk-KZ",
-        "id":  "043f"
+        "tag": "es-DO",
+        "id": "1C0A"
     },
     {
-        "tag":  "kl-GL",
-        "id":  "046f"
+        "tag": "es-NI",
+        "id": "4C0A"
     },
     {
-        "tag":  "km-KH",
-        "id":  "0453"
+        "tag": "es-PA",
+        "id": "180A"
     },
     {
-        "tag":  "kn-IN",
-        "id":  "044b"
+        "tag": "es-PY",
+        "id": "3C0A"
     },
     {
-        "tag":  "kok-IN",
-        "id":  "0457"
+        "tag": "es-PR",
+        "id": "500A"
     },
     {
-        "tag":  "ko-KR",
-        "id":  "0412"
+        "tag": "es-VE",
+        "id": "200A"
     },
     {
-        "tag":  "ky-KG",
-        "id":  "0440"
+        "tag": "es-PE",
+        "id": "280A"
     },
     {
-        "tag":  "lb-LU",
-        "id":  "046e"
+        "tag": "es-BO",
+        "id": "400A"
     },
     {
-        "tag":  "lo-LA",
-        "id":  "0454"
+        "tag": "es-HN",
+        "id": "480A"
     },
     {
-        "tag":  "lt-LT",
-        "id":  "0427"
+        "tag": "es-MX",
+        "id": "080A"
     },
     {
-        "tag":  "lv-LV",
-        "id":  "0426"
+        "tag": "es-419",
+        "id": "580A"
     },
     {
-        "tag":  "mi-NZ",
-        "id":  "0481"
+        "tag": "es-US",
+        "id": "540A"
     },
     {
-        "tag":  "mk-MK",
-        "id":  "042f"
+        "tag": "sk",
+        "id": "041B"
     },
     {
-        "tag":  "ml-IN",
-        "id":  "044c"
+        "tag": "sl",
+        "id": "0424"
     },
     {
-        "tag":  "mn-MN",
-        "id":  "0450"
+        "tag": "sw",
+        "id": "0441"
     },
     {
-        "tag":  "mn-Mong-CN",
-        "id":  "0850"
+        "tag": "nso",
+        "id": "046C"
     },
     {
-        "tag":  "mn-Mong-MN",
-        "id":  "0c50"
+        "tag": "tn-BW",
+        "id": "0832"
     },
     {
-        "tag":  "moh-CA",
-        "id":  "047c"
+        "tag": "tn-ZA",
+        "id": "0432"
     },
     {
-        "tag":  "mr-IN",
-        "id":  "044e"
+        "tag": "sr-Cyrl-RS",
+        "id": "281A"
     },
     {
-        "tag":  "ms-BN",
-        "id":  "083e"
+        "tag": "sr-Cyrl-BA",
+        "id": "1C1A"
     },
     {
-        "tag":  "ms-MY",
-        "id":  "043e"
+        "tag": "sr-Cyrl-ME",
+        "id": "301A"
     },
     {
-        "tag":  "mt-MT",
-        "id":  "043a"
+        "tag": "sr-Latn-RS",
+        "id": "241A"
     },
     {
-        "tag":  "nb-NO",
-        "id":  "0414"
+        "tag": "sr-Latn-BA",
+        "id": "181A"
     },
     {
-        "tag":  "ne-NP",
-        "id":  "0461"
+        "tag": "sr-Latn-ME",
+        "id": "2C1A"
     },
     {
-        "tag":  "nl-BE",
-        "id":  "0813"
+        "tag": "dz",
+        "id": "0C51"
     },
     {
-        "tag":  "nl-NL",
-        "id":  "0413"
+        "tag": "th",
+        "id": "041E"
     },
     {
-        "tag":  "nn-NO",
-        "id":  "0814"
+        "tag": "tg-Cyrl",
+        "id": "0428"
     },
     {
-        "tag":  "nso-ZA",
-        "id":  "046c"
+        "tag": "chr-Cher",
+        "id": "045C"
     },
     {
-        "tag":  "oc-FR",
-        "id":  "0482"
+        "tag": "tt-Cyrl",
+        "id": "0444"
     },
     {
-        "tag":  "or-IN",
-        "id":  "0448"
+        "tag": "ta-IN",
+        "id": "0449"
     },
     {
-        "tag":  "pa-IN",
-        "id":  "0446"
+        "tag": "ta-LK",
+        "id": "0849"
     },
     {
-        "tag":  "pl-PL",
-        "id":  "0415"
+        "tag": "prs-Arab",
+        "id": "048C"
     },
     {
-        "tag":  "prs-AF",
-        "id":  "048c"
+        "tag": "cs",
+        "id": "0405"
     },
     {
-        "tag":  "ps-AF",
-        "id":  "0463"
+        "tag": "bo-Tibt",
+        "id": "0451"
     },
     {
-        "tag":  "pt-BR",
-        "id":  "0416"
+        "tag": "ti-ET",
+        "id": "0473"
     },
     {
-        "tag":  "pt-PT",
-        "id":  "0816"
+        "tag": "ti-ER",
+        "id": "0473"
     },
     {
-        "tag":  "quz-BO",
-        "id":  "046b"
+        "tag": "dv",
+        "id": "0465"
     },
     {
-        "tag":  "quz-EC",
-        "id":  "086b"
+        "tag": "te",
+        "id": "044A"
     },
     {
-        "tag":  "quz-PE",
-        "id":  "0c6b"
+        "tag": "da",
+        "id": "0406"
     },
     {
-        "tag":  "rm-CH",
-        "id":  "0417"
+        "tag": "de-AT",
+        "id": "0C07"
     },
     {
-        "tag":  "ro-RO",
-        "id":  "0418"
+        "tag": "de-CH",
+        "id": "0807"
     },
     {
-        "tag":  "ru-RU",
-        "id":  "0419"
+        "tag": "de-DE",
+        "id": "0407"
     },
     {
-        "tag":  "rw-RW",
-        "id":  "0487"
+        "tag": "de-LI",
+        "id": "1407"
     },
     {
-        "tag":  "sah-RU",
-        "id":  "0485"
+        "tag": "de-LU",
+        "id": "1007"
     },
     {
-        "tag":  "sa-IN",
-        "id":  "044f"
+        "tag": "tk-Latn",
+        "id": "0442"
     },
     {
-        "tag":  "se-FI",
-        "id":  "0c3b"
+        "tag": "tr",
+        "id": "041F"
     },
     {
-        "tag":  "se-NO",
-        "id":  "043b"
+        "tag": "ne-IN",
+        "id": "0861"
     },
     {
-        "tag":  "se-SE",
-        "id":  "083b"
+        "tag": "ne-NP",
+        "id": "0461"
     },
     {
-        "tag":  "si-LK",
-        "id":  "045b"
+        "tag": "nn",
+        "id": "0814"
     },
     {
-        "tag":  "sk-SK",
-        "id":  "041b"
+        "tag": "nb",
+        "id": "0414"
     },
     {
-        "tag":  "sl-SI",
-        "id":  "0424"
+        "tag": "ha-Latn",
+        "id": "0468"
     },
     {
-        "tag":  "sma-NO",
-        "id":  "183b"
+        "tag": "ba-Cyrl",
+        "id": "046D"
     },
     {
-        "tag":  "sma-SE",
-        "id":  "1c3b"
+        "tag": "ps",
+        "id": "0463"
     },
     {
-        "tag":  "smj-NO",
-        "id":  "103b"
+        "tag": "eu",
+        "id": "042D"
     },
     {
-        "tag":  "smj-SE",
-        "id":  "143b"
+        "tag": "ca-ES-valencia",
+        "id": "0803"
     },
     {
-        "tag":  "smn-FI",
-        "id":  "243b"
+        "tag": "haw-Latn",
+        "id": "0475"
     },
     {
-        "tag":  "sms-FI",
-        "id":  "203b"
+        "tag": "hu",
+        "id": "040E"
     },
     {
-        "tag":  "sq-AL",
-        "id":  "041c"
+        "tag": "bn-IN",
+        "id": "0445"
     },
     {
-        "tag":  "sr-Cyrl-BA",
-        "id":  "1c1a"
+        "tag": "bn-BD",
+        "id": "0845"
     },
     {
-        "tag":  "sr-Cyrl-CS",
-        "id":  "0c1a"
+        "tag": "pa-Arab",
+        "id": "0846"
     },
     {
-        "tag":  "sr-Cyrl-ME",
-        "id":  "301a"
+        "tag": "pa",
+        "id": "0446"
     },
     {
-        "tag":  "sr-Cyrl-RS",
-        "id":  "281a"
+        "tag": "my",
+        "id": "0455"
     },
     {
-        "tag":  "sr-Latn-BA",
-        "id":  "181a"
+        "tag": "hi",
+        "id": "0439"
     },
     {
-        "tag":  "sr-Latn-CS",
-        "id":  "081a"
+        "tag": "fil-Latn",
+        "id": "0464"
     },
     {
-        "tag":  "sr-Latn-ME",
-        "id":  "2c1a"
+        "tag": "fi",
+        "id": "040B"
     },
     {
-        "tag":  "sr-Latn-RS",
-        "id":  "241a"
+        "tag": "fo",
+        "id": "0438"
     },
     {
-        "tag":  "sv-FI",
-        "id":  "081d"
+        "tag": "ff-Latn",
+        "id": "0867"
     },
     {
-        "tag":  "sv-SE",
-        "id":  "041d"
+        "tag": "fr-CA",
+        "id": "0C0C"
     },
     {
-        "tag":  "sw-KE",
-        "id":  "0441"
+        "tag": "fr-029",
+        "id": "1C0C"
     },
     {
-        "tag":  "syr-SY",
-        "id":  "045a"
+        "tag": "fr-CH",
+        "id": "100C"
     },
     {
-        "tag":  "ta-IN",
-        "id":  "0449"
+        "tag": "fr-FR",
+        "id": "040C"
     },
     {
-        "tag":  "te-IN",
-        "id":  "044a"
+        "tag": "fr-BE",
+        "id": "080C"
     },
     {
-        "tag":  "tg-Cyrl-TJ",
-        "id":  "0428"
+        "tag": "fr-MC",
+        "id": "180C"
     },
     {
-        "tag":  "th-TH",
-        "id":  "041e"
+        "tag": "fr-LU",
+        "id": "140C"
     },
     {
-        "tag":  "tk-TM",
-        "id":  "0442"
+        "tag": "fy",
+        "id": "0462"
     },
     {
-        "tag":  "tn-ZA",
-        "id":  "0432"
+        "tag": "bg",
+        "id": "0402"
     },
     {
-        "tag":  "tr-TR",
-        "id":  "041f"
+        "tag": "br-Latn",
+        "id": "047E"
     },
     {
-        "tag":  "tt-RU",
-        "id":  "0444"
+        "tag": "vi",
+        "id": "042A"
     },
     {
-        "tag":  "tzm-Latn-DZ",
-        "id":  "085f"
+        "tag": "he",
+        "id": "040D"
     },
     {
-        "tag":  "ug-CN",
-        "id":  "0480"
+        "tag": "be",
+        "id": "0423"
     },
     {
-        "tag":  "uk-UA",
-        "id":  "0422"
+        "tag": "fa",
+        "id": "0429"
     },
     {
-        "tag":  "ur-PK",
-        "id":  "0420"
+        "tag": "pl",
+        "id": "0415"
     },
     {
-        "tag":  "uz-Cyrl-UZ",
-        "id":  "0843"
+        "tag": "bs-Cyrl",
+        "id": "201A"
     },
     {
-        "tag":  "uz-Latn-UZ",
-        "id":  "0443"
+        "tag": "bs",
+        "id": "141A"
     },
     {
-        "tag":  "vi-VN",
-        "id":  "042a"
+        "tag": "pt-BR",
+        "id": "0416"
     },
     {
-        "tag":  "wo-SN",
-        "id":  "0488"
+        "tag": "pt-PT",
+        "id": "0816"
     },
     {
-        "tag":  "xh-ZA",
-        "id":  "0434"
+        "tag": "mi-Latn",
+        "id": "0481"
     },
     {
-        "tag":  "yo-NG",
-        "id":  "046a"
+        "tag": "mk",
+        "id": "042F"
     },
     {
-        "tag":  "zh-CN",
-        "id":  "0804"
+        "tag": "arn-Latn",
+        "id": "047A"
     },
     {
-        "tag":  "zh-HK",
-        "id":  "0c04"
+        "tag": "mr",
+        "id": "044E"
     },
     {
-        "tag":  "zh-MO",
-        "id":  "1404"
+        "tag": "ml",
+        "id": "044C"
     },
     {
-        "tag":  "zh-SG",
-        "id":  "1004"
+        "tag": "mt",
+        "id": "043A"
     },
     {
-        "tag":  "zh-TW",
-        "id":  "0404"
+        "tag": "ms-BN",
+        "id": "083E"
     },
     {
-        "tag":  "zu-ZA",
-        "id":  "0435"
+        "tag": "ms-MY",
+        "id": "043E"
     },
     {
-        "tag":  "chr-Cher-US",
-        "id":  "045c"
+        "tag": "moh-Latn",
+        "id": "047C"
     },
     {
-        "tag":  "gn-PY",
-        "id":  "0474"
+        "tag": "mn-Cyrl",
+        "id": "0450"
     },
     {
-        "tag":  "haw-US",
-        "id":  "0475"
+        "tag": "mn-Mong",
+        "id": "0850"
     },
     {
-        "tag":  "ku-Arab-IQ",
-        "id":  "0492"
+        "tag": "yo-Latn",
+        "id": "046A"
     },
     {
-        "tag":  "dz-BT",
-        "id":  "0c51"
+        "tag": "lo",
+        "id": "0454"
     },
     {
-        "tag":  "my-MM",
-        "id":  "0455"
+        "tag": "lv",
+        "id": "0426"
     },
     {
-        "tag":  "tzm-Tfng-MA",
-        "id":  "105f"
+        "tag": "lt",
+        "id": "0427"
+    },
+    {
+        "tag": "ro-MD",
+        "id": "0818"
+    },
+    {
+        "tag": "ro-RO",
+        "id": "0418"
+    },
+    {
+        "tag": "lb",
+        "id": "046E"
+    },
+    {
+        "tag": "smj-Latn-SE",
+        "id": "143B"
+    },
+    {
+        "tag": "smj-Latn-NO",
+        "id": "103B"
+    },
+    {
+        "tag": "ru",
+        "id": "0419"
+    },
+    {
+        "tag": "rm",
+        "id": "0417"
     }
 ]
