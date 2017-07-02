@@ -193,11 +193,7 @@ function Parse-KeyLayout{
             $AryKeyLayout.Add($key)
         }
         elseif($key -match '^.+:.+'){
-            $private:lang = ($key -split ':')[0]
-            $private:kbl = ($key -split ':')[1]
-            if($private:klid = (Convert-KblNameToId -Tag $lang -Name $kbl)){
-                $AryKeyLayout.Add($klid)
-            }
+            $AryKeyLayout.Add($klid)
         }
     }
     $AryKeyLayout.ToArray()
