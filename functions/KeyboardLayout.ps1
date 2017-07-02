@@ -159,6 +159,7 @@ function Set-KeyboardLayout
                 Action = $Action
                 Default = $Default
             }
+            Write-Verbose ('Adding Keyboard (Lang:"{0}" / Layout:"{1}")' -f $LanguageTag,$KeyboardLayoutName)
         }
         elseif ($KeyboardLayoutId) {
             $kblRaws += [PSCustomObject]@{
@@ -166,6 +167,7 @@ function Set-KeyboardLayout
                 Action = $Action
                 Default = $Default
             }
+            Write-Verbose ('Adding Keyboard (Id:"{0}")' -f $KeyboardLayoutId)
         }
     }
 
