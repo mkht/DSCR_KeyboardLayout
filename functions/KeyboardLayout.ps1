@@ -55,12 +55,12 @@ function Convert-KblIdToName
     [CmdletBinding()]
     Param(
         [Parameter(Mandatory, ValueFromPipeline, Position=0)]
-        [Alias('Name')]
-        [string]$KeyboardLayoutName
+        [Alias('Id')]
+        [string]$KeyboardLayoutId
     )
 
     Process{
-        @($LanguageList.where({$_.name -eq $KeyboardLayoutName}).id)[0]
+        @($KeyboardList.where({$_.name -eq $KeyboardLayoutId}).id)[0]
     }
 }
 
