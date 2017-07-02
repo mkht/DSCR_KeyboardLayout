@@ -182,8 +182,8 @@ function Set-TargetResource
             }
         }
 
-        Remove-Item 'HKCU:\Software\Microsoft\CTF\SortOrder\AssemblyItem' -Force -ErrorAction SilentlyContinue
-        Remove-Item 'HKCU:\Software\Microsoft\CTF\SortOrder\Language' -Force -ErrorAction SilentlyContinue
+        # Remove-Item 'HKCU:\Software\Microsoft\CTF\SortOrder\AssemblyItem' -Force -ErrorAction SilentlyContinue
+        # Remove-Item 'HKCU:\Software\Microsoft\CTF\SortOrder\Language' -Force -ErrorAction SilentlyContinue
     }
 
     $SetParams | Set-KeyboardLayout -CopySettingsToDefaultUserAcct:$CopySettingsToDefaultUserAcct -CopySettingsToSystemAcct:$CopySettingsToSystemAcct
