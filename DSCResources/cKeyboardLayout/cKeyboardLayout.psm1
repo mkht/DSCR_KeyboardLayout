@@ -81,9 +81,9 @@ function Test-TargetResource
     }
 
     if($Ensure -eq 'Absent'){
-        foreach($klid in $AryKeyLayout){
-            if($InstalledLayout.KeyboardLayout -match $klid){
-                Write-Verbose ("Current default keyboard layout is NOT your desired one. (desired: '{0}' / current: '{1}')" -f $Defaultlayout, $InstalledLayout.Default)
+        foreach($key in $AryKeyLayout){
+            if($InstalledLayout.KeyboardLayout -match $key.KeyboardLayoutId){
+                Write-Verbose ("Current keyboard layouts are NOT matched your desired ones. (desired: '{0}' / current: '{1}')" -f ($AryKeyLayout.KeyboardLayoutId -join ','), $InstalledLayout.KeyboardLayout)
                 return $false
             }
         }
@@ -92,21 +92,21 @@ function Test-TargetResource
     else{
         if($Default){
             $Defaultlayout = @(Parse-KeyLayout $Default)[0]
-            if(-not $Defaultlayout){
+            if(-not $Defaultlayout.KeyboardLayoutId){
                 Write-Error 'Default param is not valid format.'
             }
-            elseif(-not ($Defaultlayout -eq $InstalledLayout.Default)){
-                Write-Verbose ("Current default keyboard layout is NOT your desired one. (desired: '{0}' / current: '{1}')" -f $Defaultlayout, $InstalledLayout.Default)
+            elseif(-not ($Defaultlayout.KeyboardLayoutId -eq $InstalledLayout.Default)){
+                Write-Verbose ("Current default keyboard layout is NOT your desired one. (desired: '{0}' / current: '{1}')" -f $Defaultlayout.KeyboardLayoutId, $InstalledLayout.Default)
                 return $false
             }
             else{
-                Write-Verbose ("Current default keyboard layout is your desired one. (desired: '{0}' / current: '{1}')" -f $Defaultlayout, $InstalledLayout.Default)
+                Write-Verbose ("Current default keyboard layout is your desired one. (desired: '{0}' / current: '{1}')" -f $Defaultlayout.KeyboardLayoutId, $InstalledLayout.Default)
             }
         }
 
-        foreach($klid in $AryKeyLayout){
-            if(-not ($InstalledLayout.KeyboardLayout -match $klid)){
-                Write-Verbose ("Installed keyboard layouts are NOT matched your desired ones. (desired: '{0}' / current: '{1}')" -f ($AryKeyLayout -join ','), $InstalledLayout.KeyboardLayout)
+        foreach($key in $AryKeyLayout){
+            if(-not ($InstalledLayout.KeyboardLayout -match $key.KeyboardLayoutId)){
+                Write-Verbose ("Installed keyboard layouts are NOT matched your desired ones. (desired: '{0}' / current: '{1}')" -f ($AryKeyLayout.KeyboardLayoutId -join ','), $InstalledLayout.KeyboardLayout)
                 return $false
             }
         }
@@ -153,17 +153,27 @@ function Set-TargetResource
 
     $SetParams = @()
     foreach($key in $AryKeyLayout){
-        $SetParams += [pscustomobject]@{
-            KeyboardLayoutId = $key
-            Action = $Action
-            Default = ($key -eq $DefaultKeyLayout)
+        if($key.LanguageTag -and $key.KeyboardLayoutName){
+            $SetParams += [pscustomobject]@{
+                KeyboardLayoutName = $key.KeyboardLayoutName
+                LanguageTag = $key.LanguageTag
+                Action = $Action
+                Default = ($key.KeyboardLayoutId -eq $DefaultKeyLayout.KeyboardLayoutId)
+            }
+        }
+        else{
+            $SetParams += [pscustomobject]@{
+                KeyboardLayoutId = $key.KeyboardLayoutId
+                Action = $Action
+                Default = ($key.KeyboardLayoutId -eq $DefaultKeyLayout.KeyboardLayoutId)
+            }
         }
     }
 
     if($ClearExist){
         $CurrentKeyLayout = Get-KeyboardLayout
         foreach($key in $CurrentKeyLayout){
-            if($SetParams.KeyboardLayoutId -notcontains $key){
+            if($AryKeyLayout.KeyboardLayoutId -notcontains $key){
                 $SetParams += [pscustomobject]@{
                     KeyboardLayoutId = $key
                     Action = 'remove'
@@ -186,14 +196,37 @@ function Parse-KeyLayout{
         [string]$KeyboardLayout
     )
 
-    $private:AryKeyLayout = New-Object 'System.Collections.Generic.List[string]'
-    foreach($key in ($KeyboardLayout -split ',')){
+    $private:AryKeyLayout = New-Object 'System.Collections.Generic.List[Hashtable]'
+    foreach ($key in ($KeyboardLayout -split ',')) {
         $key = $key.Trim()
-        if($key -match '^[0-9a-f]{4}:[0-9a-f\-\{\}]{8,}$'){
-            $AryKeyLayout.Add($key)
+        # IDの場合
+        if ($key -match '^[0-9a-f]{4}:[0-9a-f\-\{\}]{8,}$') {
+            $Hash = @{
+                KeyboardLayoutId   = $key   #IDのみで返す
+                KeyboardLayoutName = ''
+                LanguageTag        = ''
+            }
+            $AryKeyLayout.Add($Hash)
         }
-        elseif($key -match '^.+:.+'){
-            $AryKeyLayout.Add($klid)
+        # 名前の場合
+        elseif ($key -match '^.+:.+') {
+            $private:lang = ($key -split ':')[0]
+            $private:kbl = ($key -split ':')[1]
+            # 名前をIDに変換する
+            $private:klid = (Convert-KblNameToId -Tag $lang -Name $kbl)
+
+            if (-not $klid) {
+                #IDに変換できなかった場合はListに追加せずスキップする
+            }
+            else{
+                #名前とID両方を返す
+                $Hash = @{
+                    KeyboardLayoutId   = $klid
+                    KeyboardLayoutName = $kbl
+                    LanguageTag        = $lang
+                }
+                $AryKeyLayout.Add($Hash)
+            }
         }
     }
     $AryKeyLayout.ToArray()
