@@ -358,7 +358,7 @@ function Set-KeyboardLayout-Win10 {
             switch ($Action) {
                 'add' {
                     if ($LangObj.InputMethodTips.FindIndex( {$args -eq $KeyboardLayoutId}) -lt 0) {
-                        Write-Verbose ('Installing keyboard layout (`{{0}`})' -f $KeyboardLayoutId)
+                        Write-Verbose ('Installing keyboard layout ({0})' -f $KeyboardLayoutId)
                         $LangObj.InputMethodTips.Add($KeyboardLayoutId)
                     }
                     else{
@@ -388,7 +388,7 @@ function Set-KeyboardLayout-Win10 {
                     }
                     else {
                         if ($Lang[0].InputMethodTips.FindIndex( {$args -eq $KeyboardLayoutId}) -lt 0) {
-                            Write-Verbose ('Installing keyboard layout (`{{0}`})' -f $KeyboardLayoutId)
+                            Write-Verbose ('Installing keyboard layout ({0})' -f $KeyboardLayoutId)
                             $Lang[0].InputMethodTips.Clear()
                             $Lang[0].InputMethodTips.Add($KeyboardLayoutId)
                         }
@@ -411,7 +411,7 @@ function Set-KeyboardLayout-Win10 {
         Set-WinUserLanguageList $KblList -Force
         Write-Verbose ('Keyboard layouts installed successfully')
         if ($DefaultKbl) {
-            Write-Verbose ('Set default keyboard layout (`{{0}`})' -f $DefaultKbl)
+            Write-Verbose ('Set default keyboard layout ({0})' -f $DefaultKbl)
             Set-WinDefaultInputMethodOverride $DefaultKbl
         }
     }
