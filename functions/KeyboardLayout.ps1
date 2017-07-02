@@ -114,7 +114,7 @@ function Set-KeyboardLayout
 {
     [CmdletBinding(DefaultParameterSetName='ID')]
     Param(
-        [Parameter(Mandatory, ValueFromPipeline, ValueFromPipelineByPropertyName, ParameterSetName='ID')]
+        [Parameter(Mandatory, ValueFromPipelineByPropertyName, ParameterSetName='ID')]
         [ValidatePattern('^[0-9a-f]{4}:[0-9a-f\-\{\}]{8,}$')]
         [Alias('Id')]
         [string]$KeyboardLayoutId,
@@ -229,7 +229,7 @@ function Set-KeyboardLayout-Win7
 {
     [CmdletBinding(DefaultParameterSetName='ID')]
     Param(
-        [Parameter(Mandatory, ValueFromPipeline, ValueFromPipelineByPropertyName, ParameterSetName='ID')]
+        [Parameter(Mandatory, ValueFromPipelineByPropertyName, ParameterSetName='ID')]
         [ValidatePattern('^[0-9a-f]{4}:[0-9a-f\-\{\}]{8,}$')]
         [Alias('Id')]
         [string]$KeyboardLayoutId,
@@ -312,7 +312,7 @@ function Set-KeyboardLayout-Win7
 function Set-KeyboardLayout-Win10 {
     [CmdletBinding()]
     Param(
-        [Parameter(Mandatory, ValueFromPipeline, ValueFromPipelineByPropertyName, ParameterSetName = 'ID')]
+        [Parameter(Mandatory, ValueFromPipelineByPropertyName, ParameterSetName = 'ID')]
         [ValidatePattern('^[0-9a-f]{4}:[0-9a-f\-\{\}]{8,}$')]
         [Alias('Id')]
         [string]$KeyboardLayoutId,
