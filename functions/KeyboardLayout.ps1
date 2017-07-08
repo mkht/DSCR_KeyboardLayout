@@ -186,6 +186,25 @@ function Set-KeyboardLayout
 
     Begin{
         $KblRaws = @()
+
+        switch ($OS) {
+            '7' {
+                if($PSBoundParameters.ClearExist){
+                    Write-Warning ('"ClearExist" parameter works only Windows 10 systems !')
+                }
+             }
+            '10' {
+                if($PSBoundParameters.CopySettingsToDefaultUserAcct){
+                    Write-Warning ('"CopySettingsToDefaultUserAcct" parameter works only Windows 7 systems !')
+                }
+                if($PSBoundParameters.CopySettingsToSystemAcct){
+                    Write-Warning ('"CopySettingsToSystemAcct" parameter works only Windows 7 systems !')
+                }
+            }
+            Default {
+                Write-Warning ('Non supported Operating System !')
+            }
+        }
     }
 
     Process{
@@ -222,7 +241,7 @@ function Set-KeyboardLayout
                 $KblRaws | Set-KeyboardLayout-Win10 -ClearExist:$ClearExist
             }
             Default {
-                Write-Error ('Non supported Operating System')
+                Write-Error ('Non supported Operating System !')
                 $KblRaws | Set-KeyboardLayout-Win10 -ClearExist:$ClearExist
             }
         }
