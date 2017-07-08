@@ -182,8 +182,11 @@ function Set-TargetResource
             }
         }
 
-        # Remove-Item 'HKCU:\Software\Microsoft\CTF\SortOrder\AssemblyItem' -Force -ErrorAction SilentlyContinue
-        # Remove-Item 'HKCU:\Software\Microsoft\CTF\SortOrder\Language' -Force -ErrorAction SilentlyContinue
+        # Only Win7
+        if((([System.Environment]::OSVersion).Version[0] | % {("{0}.{1}" -f $_.Major, $_.Minor)}) -eq '6.1'){
+            Remove-Item 'HKCU:\Software\Microsoft\CTF\SortOrder\AssemblyItem' -Force -ErrorAction SilentlyContinue
+            Remove-Item 'HKCU:\Software\Microsoft\CTF\SortOrder\Language' -Force -ErrorAction SilentlyContinue
+        }
     }
 
     $SetParams | Set-KeyboardLayout -CopySettingsToDefaultUserAcct:$CopySettingsToDefaultUserAcct -CopySettingsToSystemAcct:$CopySettingsToSystemAcct
