@@ -556,24 +556,6 @@ function Get-DefaultKeyboardLayout
     return ("{0}:{1}" -f $langId,$layoutId)
 }
 
-# function Sort-KeyboardLayout {
-#     [CmdletBinding()]
-#     Param(
-#         [Parameter(Mandatory)]
-#         [string[]]$KeyboardLayoutIds,
-
-#         [switch]$Force
-#     )
-
-#     Begin
-#     {
-#         $KblCurrent = Get-KeyboardLayout
-#         $KblToAdd = @()
-#         $kblToRemove = @()
-#     }
-
-# }
-
 function Set-KeyboardLayoutRegistry {
     [CmdletBinding()]
     Param(
