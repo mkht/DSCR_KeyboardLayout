@@ -433,11 +433,16 @@ function Set-KeyboardLayout-Win10 {
     }
 
     End {
-        Set-WinUserLanguageList $KblList -Force
-        Write-Verbose ('Keyboard layouts installed successfully')
-        if ($DefaultKbl) {
-            Write-Verbose ('Set default keyboard layout ({0})' -f $DefaultKbl)
-            Set-WinDefaultInputMethodOverride $DefaultKbl
+        if ($KblList.Count -ge 1) {
+            Set-WinUserLanguageList $KblList -Force
+            Write-Verbose ('Keyboard layouts installed successfully')
+            if ($DefaultKbl) {
+                Write-Verbose ('Set default keyboard layout ({0})' -f $DefaultKbl)
+                Set-WinDefaultInputMethodOverride $DefaultKbl
+            }
+        }
+        else {
+            Write-Error ('No language will remain.')
         }
     }
 }
