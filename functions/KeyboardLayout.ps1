@@ -110,6 +110,49 @@ function New-GsXml
     }
 }
 
+<#
+.Synopsis
+   Add or Remove keyboard layout
+.DESCRIPTION
+   Add or Remove keyboard layout to current user & computer.
+   This cmdlet support Windows 7 & 10 system only.
+.PARAMETER KeyboardLayoutId
+   Specify keyboard layout ID (KLID)
+   KLID is special formatted string like "0409:00000409" (Lang tag:Layout id)
+   If you don't know desired KLID, you can refer to JSON files in this module's root directory or Use Get-KeyboardLayout cmdlet (or Google it).
+.PARAMETER LanguageTag
+   If you don't wont see unsuitable KLID, Use LanguageTag and KeyboardLayoutName arguments.
+   You can use friendly name to specify keyboard layout instead of KLID.
+   Specify LanguageTag for IETF Language Tag like "en-US" or "fr-FR"
+.PARAMETER KeyboardLayoutName
+   Specify name of keyboard layout.
+   The list of all available layout names are written in JSON file that saved in this module's root directory
+   e.g.) "United States-International" , "Chinese (Traditional) - US Keyboard"
+.PARAMETER Action
+   You can choose "add" or "remove".
+   default: 'add'
+.PARAMETER Default
+   If this param set to $true, keyboard layout will configure to default keyboard of current user.
+   default: False
+.PARAMETER CopySettingsToDefaultUserAcct
+   Copy settings to default user account profile.
+   This parameter only works on Windows 7 systems.
+   default: False
+.PARAMETER CopySettingsToSystemAcct
+   Copy settings to system account profile.
+   This parameter only works on Windows 7 systems.
+   default: False
+.PARAMETER ClearExist
+   Clear existence keyboard layouts.
+   This parameter only works on Windows 10 systems.
+   default: False
+.EXAMPLE
+   Add "US - US Keyboard" using KLID
+   Set-KeyboardLayout -KeyboardLayoutId "0409:00000409"
+.EXAMPLE
+   Add "Chinese (Taiwan) - Chinese Simplified QuanPin" using friendly name
+   Set-KeyboardLayout -LanguageTag 'zh-TW' -KeyboardLayoutName "Chinese Simplified QuanPin"
+#>
 function Set-KeyboardLayout
 {
     [CmdletBinding(DefaultParameterSetName='ID')]
@@ -187,44 +230,6 @@ function Set-KeyboardLayout
     }
 }
 
-<#
-.Synopsis
-   Add or Remove keyboard layout
-.DESCRIPTION
-   Add or Remove keyboard layout to current user & computer.
-   This cmdlet support Windows 7 system only. Don't use Windows 8 or later systems.
-.PARAMETER KeyboardLayoutId
-   Specify keyboard layout ID (KLID)
-   KLID is special formatted string like "0409:00000409" (Lang tag:Layout id)
-   If you don't know desired KLID, you can refer to JSON files in this module's root directory or Use Get-KeyboardLayout cmdlet (or Google it).
-.PARAMETER LanguageTag
-   If you don't wont see unsuitable KLID, Use LanguageTag and KeyboardLayoutName arguments.
-   You can use friendly name to specify keyboard layout instead of KLID.
-   Specify LanguageTag for IETF Language Tag like "en-US" or "ja-JP"
-.PARAMETER KeyboardLayoutName
-   Specify name of keyboard layout.
-   The list of all available layout names are written in JSON file that saved in this module's root directory
-   e.g.) "United States-International" , "Chinese (Traditional) - US Keyboard"
-.PARAMETER Action
-   You can choose "add" or "remove".
-   default: 'add'
-.PARAMETER Default
-   If this param set to $true, keyboard layout will configure to default keyborad of current user.
-   WARNING: This option is deprecated. Not robust.
-   default: False
-.PARAMETER CopySettingsToDefaultUserAcct
-   Copy settings to default user account profile.
-   default: False
-.PARAMETER CopySettingsToSystemAcct
-   Copy settings to system account profile.
-   default: False
-.EXAMPLE
-   Add "US - US Keyboard" using KLID
-   Set-KeyboardLayout -KeyboardLayoutId "0409:00000409"
-.EXAMPLE
-   Add "Chinese (Taiwan) - Chinese Simplified QuanPin" using friendly name
-   Set-KeyboardLayout -LanguageTag 'zh-TW' -KeyboardLayoutName "Chinese Simplified QuanPin"
-#>
 function Set-KeyboardLayout-Win7
 {
     [CmdletBinding(DefaultParameterSetName='ID')]

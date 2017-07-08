@@ -184,6 +184,7 @@ function Set-TargetResource
 
         # Only Win7
         if((([System.Environment]::OSVersion).Version[0] | % {("{0}.{1}" -f $_.Major, $_.Minor)}) -eq '6.1'){
+            # キーボードレイアウトの順序を初期化する
             Remove-Item 'HKCU:\Software\Microsoft\CTF\SortOrder\AssemblyItem' -Force -ErrorAction Stop
             Remove-Item 'HKCU:\Software\Microsoft\CTF\SortOrder\Language' -Force -ErrorAction Stop
         }
