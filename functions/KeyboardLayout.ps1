@@ -361,7 +361,7 @@ function Set-KeyboardLayout-Win10 {
 
     Begin {
         if ($ClearExist) {
-            $KblList = New-Object -TypeName 'System.Collections.Generic.List`1[[Microsoft.InternationalSettings.Commands.WinUserLanguage]]'
+            $KblList = New-Object -TypeName (New-WinUserLanguageList -Language 'en-US').GetType().FullName
         }
         else {
             $KblList = Get-WinUserLanguageList
