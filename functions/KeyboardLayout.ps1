@@ -1,5 +1,4 @@
 ﻿$modulePath = (get-item (Split-Path -parent $MyInvocation.MyCommand.Path)).Parent.FullName
-$OS = '10'
 # check os version
 $private:Ver = ([System.Environment]::OSVersion).Version
 switch (('{0}.{1}' -f $Ver.Major, $Ver.Minor)) {
