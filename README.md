@@ -4,7 +4,7 @@ DSCR_KeyboardLayout
 PowerShell functions & DSC Resource to add / remove Keyboard Layout (Input Locales).
 
 ## System Requirements
-This module only supported Windows 7 & Windows 10
+This module only supports Windows 7 & Windows 10
 
 ## Install
 You can install Resource through [PowerShell Gallery](https://www.powershellgallery.com/packages/DSCR_KeyboardLayout/).
