@@ -73,3 +73,6 @@ Configuration Example2
 ```
 
 ## ChangeLog
+### 2.1.0
++ Windows 10 support
++ Bug fix
