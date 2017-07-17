@@ -12,7 +12,7 @@
     RootModule        = 'DSCR_KeyboardLayout.psm1'
 
     # このモジュールのバージョン番号です。
-    ModuleVersion     = '2.1.0'
+    ModuleVersion     = '2.1.2'
 
     # このモジュールを一意に識別するために使用される ID
     GUID              = '0e3d225d-563a-4499-af75-4e1eacdce887'
@@ -27,7 +27,7 @@
     Copyright         = '(c) 2017 mkht. All rights reserved.'
 
     # このモジュールの機能の説明
-    Description       = 'Add / Remove / Get Keyboard layout.`n This module supports only Windows 7 & 10 computers.'
+    Description       = 'Add / Remove / Get Keyboard layout. This module supports only Windows 7 & 10 computers.'
 
     # このモジュールに必要な Windows PowerShell エンジンの最小バージョン
     PowerShellVersion = '5.0'
@@ -55,7 +55,7 @@
     AliasesToExport   = @()
 
     # このモジュールからエクスポートする DSC リソース
-    # DscResourcesToExport = @()
+    DscResourcesToExport = @('cKeyboardLayout')
 
     # このモジュールからエクスポートされたコマンドの既定のプレフィックス。既定のプレフィックスをオーバーライドする場合は、Import-Module -Prefix を使用します。
     # DefaultCommandPrefix = ''

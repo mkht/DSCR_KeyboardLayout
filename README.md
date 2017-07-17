@@ -73,6 +73,9 @@ Configuration Example2
 ```
 
 ## ChangeLog
+### 2.1.2
++ Fix minor issue in module manifest
+
 ### 2.1.0
 + Windows 10 support
 + Bug fix
