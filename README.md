@@ -73,6 +73,9 @@ Configuration Example2
 ```
 
 ## ChangeLog
+### 2.1.3
++ Bug fix [#4](https://github.com/mkht/DSCR_KeyboardLayout/issues/4)
+
 ### 2.1.2
 + Fix minor issue in module manifest
 

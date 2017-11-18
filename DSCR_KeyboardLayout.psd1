@@ -12,7 +12,7 @@
     RootModule        = 'DSCR_KeyboardLayout.psm1'
 
     # このモジュールのバージョン番号です。
-    ModuleVersion     = '2.1.2'
+    ModuleVersion     = '2.1.3'
 
     # このモジュールを一意に識別するために使用される ID
     GUID              = '0e3d225d-563a-4499-af75-4e1eacdce887'
