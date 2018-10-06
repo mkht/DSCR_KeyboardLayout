@@ -9,28 +9,28 @@
 @{
 
     # このマニフェストに関連付けられているスクリプト モジュール ファイルまたはバイナリ モジュール ファイル。
-    RootModule        = 'DSCR_KeyboardLayout.psm1'
+    RootModule           = 'DSCR_KeyboardLayout.psm1'
 
     # このモジュールのバージョン番号です。
-    ModuleVersion     = '2.1.3'
+    ModuleVersion        = '2.1.3'
 
     # このモジュールを一意に識別するために使用される ID
-    GUID              = '0e3d225d-563a-4499-af75-4e1eacdce887'
+    GUID                 = '0e3d225d-563a-4499-af75-4e1eacdce887'
 
     # このモジュールの作成者
-    Author            = 'mkht'
+    Author               = 'mkht'
 
     # このモジュールの会社またはベンダー
-    CompanyName       = ''
+    CompanyName          = ''
 
     # このモジュールの著作権情報
-    Copyright         = '(c) 2017 mkht. All rights reserved.'
+    Copyright            = '(c) 2018 mkht. All rights reserved.'
 
     # このモジュールの機能の説明
-    Description       = 'Add / Remove / Get Keyboard layout. This module supports only Windows 7 & 10 computers.'
+    Description          = 'Add / Remove / Get Keyboard layout. This module supports only Windows 7 & 10 computers.'
 
     # このモジュールに必要な Windows PowerShell エンジンの最小バージョン
-    PowerShellVersion = '5.0'
+    PowerShellVersion    = '5.0'
 
     # Minimum version of the common language runtime (CLR) required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
     # CLRVersion = ''
@@ -39,20 +39,20 @@
     # NestedModules = @()
 
     # このモジュールからエクスポートする関数です。最適なパフォーマンスを得るには、ワイルドカードを使用せず、エクスポートする関数がない場合は、エントリを削除しないで空の配列を使用してください。
-    FunctionsToExport = @(
+    FunctionsToExport    = @(
         'Get-KeyboardLayout',
         'Set-KeyboardLayout',
         'Get-DefaultKeyboardLayout'
     )
 
     # このモジュールからエクスポートするコマンドレットです。最適なパフォーマンスを得るには、ワイルドカードを使用せず、エクスポートするコマンドレットがない場合は、エントリを削除しないで空の配列を使用してください。
-    CmdletsToExport   = @()
+    CmdletsToExport      = @()
 
     # このモジュールからエクスポートする変数
-    VariablesToExport = @()
+    VariablesToExport    = @()
 
     # このモジュールからエクスポートするエイリアスです。最適なパフォーマンスを得るには、ワイルドカードを使用せず、エクスポートするエイリアスがない場合は、エントリを削除しないで空の配列を使用してください。
-    AliasesToExport   = @()
+    AliasesToExport      = @()
 
     # このモジュールからエクスポートする DSC リソース
     DscResourcesToExport = @('cKeyboardLayout')
@@ -61,7 +61,7 @@
     # DefaultCommandPrefix = ''
 
     # RootModule/ModuleToProcess に指定されているモジュールに渡すプライベート データ。これには、PowerShell で使用される追加のモジュール メタデータを含む PSData ハッシュテーブルが含まれる場合もあります。
-    PrivateData       = @{
+    PrivateData          = @{
         PSData = @{
             # このモジュールに適用されているタグ。オンライン ギャラリーでモジュールを検出する際に役立ちます。
             Tags       = ('DSC', 'DSCResource', 'Keyboard', 'Language', 'Input')
