@@ -7,7 +7,7 @@ PowerShell functions & DSC Resource to add / remove Keyboard Layout (Input Local
 This module only supports Windows 7 & Windows 10
 
 ## Install
-You can install Resource through [PowerShell Gallery](https://www.powershellgallery.com/packages/DSCR_KeyboardLayout/).
+You can install from [PowerShell Gallery](https://www.powershellgallery.com/packages/DSCR_KeyboardLayout/).
 ```Powershell
 Install-Module -Name DSCR_KeyboardLayout
 ```
@@ -25,7 +25,7 @@ PowerShell DSC Resource add / remove Keyboard Layouts.
 + [string] **KeyboardLayout** (Key):
     + The input profiles are made up of a "language identifier" and a "keyboard identifier".
     + For details and list of IDs, see [the documents of Microsoft](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs)
-    + You can specify not only ID, but also firendly name of profile. For example, you can specify `"fr-FR:French"` instead of `"040c:0000040c"`.
+    + You can specify not only ID, but also friendly name of profile. For example, you can specify `"fr-FR:French"` instead of `"040c:0000040c"`.
     + If you want to specify multiple layouts, separate them with a comma.
 
 + [string] **Default** (Write):
