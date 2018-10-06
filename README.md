@@ -73,6 +73,10 @@ Configuration Example2
 ```
 
 ## ChangeLog
+### 2.2.0
++ We confirmed that this module works on Windows 10 version 1809
++ Add new language ID `zh-Hans-CN` & `nqo` (only on Windows 10)
+
 ### 2.1.3
 + Bug fix [#4](https://github.com/mkht/DSCR_KeyboardLayout/issues/4)
 
